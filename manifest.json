@@ -1,0 +1,24 @@
+{
+  "name": "Gmail Crawler",
+  "description": "Fetch gmail contents",
+  "version": "1.0",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "default_icon.png"
+  },
+  "permissions" : [
+    "bookmarks",
+    "identity"
+  ],
+  "host_permissions" : [
+    "https://gmail.googleapis.com/*"
+  ], 
+  "oauth2": {
+    "client_id": "499123830423-0f2jl3fltk8ce418i4fpkalr6esv7hbi.apps.googleusercontent.com",
+    "scopes": [
+      "https://www.googleapis.com/auth/gmail.readonly"
+    ]
+  }
+
+}
